@@ -49,16 +49,16 @@ body                            { padding-top:20px;color: #00b3ee }
 
 /* enter animation */
 #form-views.ng-enter            {
-	-webkit-animation:slideInRight 2.3s both ease;
-	-moz-animation:slideInRight 2.3s both ease;
-	animation:slideInRight 2.3s both ease;
+	-webkit-animation:slideInRight 0.5s both ease;
+	-moz-animation:slideInRight 0.5s both ease;
+	animation:slideInRight 0.5s both ease;
 }
 
 /* leave animation */
 #form-views.ng-leave            {
-	-webkit-animation:slideOutLeft 7.3s both ease;
-	-moz-animation:slideOutLeft 7.3s both ease;
-	animation:slideOutLeft 7.3s both ease;
+	-webkit-animation:slideOutLeft 0.5s both ease;
+	-moz-animation:slideOutLeft 0.5s both ease;
+	animation:slideOutLeft 0.5s both ease;
 }
 
 /* ANIMATIONS
