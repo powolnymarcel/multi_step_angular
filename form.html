@@ -1,0 +1,35 @@
+<!-- form.html -->
+<div class="row">
+	<div class="col-sm-8 col-sm-offset-2">
+
+		<div id="form-container">
+
+			<div class="page-header text-center">
+				<h2>Let's Be Friends</h2>
+
+				<!-- Les liens vers les états de l'app utilisant le path relatif -->
+				<!-- Ajoute la class active si l'etat match le ui-sref -->
+				<div id="status-buttons" class="text-center">
+					<a ui-sref-active="active" ui-sref=".profile"><span>1</span> Profile</a>
+					<a ui-sref-active="active" ui-sref=".interets"><span>2</span> Interets</a>
+					<a ui-sref-active="active" ui-sref=".payement"><span>3</span> Payement</a>
+				</div>
+			</div>
+
+			<!-- Utilise ng-submit pour attraper la soumission du form  et utiliser les fonctions angular-->
+			<form id="signup-form" ng-submit="gererLeForm()">
+
+				<!-- Les états niché seront injectés ici -->
+				<div id="form-views" ui-view></div>
+			</form>
+
+		</div>
+
+		<!-- Montre les data -->
+    <pre>
+        {{ formData }}
+    </pre>
+
+	</div>
+</div>
+

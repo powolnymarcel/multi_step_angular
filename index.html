@@ -1,10 +1,33 @@
-<!doctype html>
-<html lang="fr">
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+	<meta charset="utf-8">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="public/lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
+
+	<!-- JS -->
+	<!-- charge angular, nganimate et ui-router -->
+	<script src="public/lib/angular/angular.min.js"></script>
+	<script src="public/lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="public/lib/angular-animate/angular-animate.min.js"></script>
+	<script src="app.js"></script>
+	<script src="routes/routes.js"></script>
+	<script src="controller/formCtrl.js"></script>
+
 </head>
-<body>
+
+<!-- declaration de l'angular app -->
+<body ng-app="formApp">
+
+<div class="container">
+
+	<!-- Les vues seront injectées ici -->
+	<div ui-view></div>
+
+</div>
 
 </body>
 </html>
